@@ -1,16 +1,133 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest Hero Section</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background-color: #f5f5f5;
+    }
+
+    /* ================= HERO SECTION ================= */
+
+    .hero{
+      height: 100vh;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      gap: 50px;
+
+      padding: 50px;
+    }
+
+    /* ================= IMAGE ================= */
+
+    .hero img{
+      width: 450px;
+
+      height: 550px;
+
+      object-fit: cover;
+
+      border-radius: 20px;
+
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* ================= CONTENT ================= */
+
+    .hero-content{
+      max-width: 500px;
+    }
+
+    .hero-content h1{
+      font-size: 55px;
+
+      color: #e60023;
+
+      margin-bottom: 20px;
+    }
+
+    .hero-content p{
+      font-size: 20px;
+
+      line-height: 32px;
+
+      color: #444;
+
+      margin-bottom: 30px;
+    }
+
+    /* ================= BUTTON ================= */
+
+    .hero-content a{
+      text-decoration: none;
+
+      padding: 14px 28px;
+
+      background-color: #e60023;
+
+      color: white;
+
+      border-radius: 30px;
+
+      font-size: 18px;
+
+      display: inline-block;
+    }
+
+    .hero-content a:hover{
+      background-color: #b8001c;
+    }
+
+  </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- ================= HERO ================= -->
+
+  <div class="hero">
+
+    <!-- Image -->
+
+    <img
+      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+      alt="Pinterest Hero Image"
+    >
+
+    <!-- Content -->
+
+    <div class="hero-content">
+
+      <h1>Get your next idea</h1>
+
+      <p>
+        Explore inspiring ideas, creative designs,
+        recipes, fashion, and much more just like Pinterest.
+      </p>
+
+      <a href="#">
+        Explore now
+      </a>
+
+    </div>
+
+  </div>
 
 </body>
-
 </html>
